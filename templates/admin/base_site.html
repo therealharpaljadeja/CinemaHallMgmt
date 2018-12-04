@@ -1,0 +1,21 @@
+{% extends "admin/base.html" %}
+
+
+{% block extrastyle %}
+<style>
+#header{
+    background-color: #004E64;
+}
+#site-name{
+    color: #5DD9C1;
+}
+</style>
+{% endblock %}
+
+{% block title %}{{title}} | Cinema Management{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Cinema Management</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
